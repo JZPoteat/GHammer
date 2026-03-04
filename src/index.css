@@ -1,0 +1,73 @@
+/* Grabthar's Hammer Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --deep-purple: #2a1143;
+  --medium-purple: #9853a1;
+  --blue-gray: #7c8197;
+  --coral: #f37b70;
+  --peach: #fab383;
+  --light-gray-blue: #b3b3c6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--deep-purple);
+  color: var(--light-gray-blue);
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--deep-purple);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--medium-purple);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--coral);
+}
