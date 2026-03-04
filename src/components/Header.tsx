@@ -11,7 +11,7 @@ const Header = () => {
       <div className="header-container">
         <Link to="/" className="logo-link">
           <img 
-            src="/GH-primary-FC.png" 
+            src="GH-primary-FC.png" 
             alt="Grabthar's Hammer" 
             className="logo"
           />
