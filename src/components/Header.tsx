@@ -36,12 +36,6 @@ const Header = () => {
             SETLIST
           </Link>
           <Link 
-            to="/gallery" 
-            className={`nav-link ${isActive('/gallery') ? 'active' : ''}`}
-          >
-            GALLERY
-          </Link>
-          <Link 
             to="/contact" 
             className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
           >

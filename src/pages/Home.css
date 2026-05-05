@@ -2,11 +2,23 @@
   min-height: 100vh;
 }
 
+.band-photo-hero {
+  width: 100%;
+  line-height: 0;
+}
+
+.band-hero-img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 .hero {
   background: linear-gradient(135deg, #2a1143 0%, #9853a1 50%, #7c8197 100%);
-  padding: 6rem 2rem;
+  padding: 3rem 2rem;
   text-align: center;
-  border-bottom: 4px solid #f37b70;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
@@ -15,22 +27,20 @@
   margin: 0 auto;
 }
 
-.hero-title {
-  font-family: 'Bebas Neue', 'Arial Black', Impact, sans-serif;
-  font-size: 4rem;
-  color: #fab383;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
-  margin: 0 0 1rem 0;
-  letter-spacing: 4px;
+.hero-logo {
+  width: 340px;
+  max-width: 80%;
+  margin: 0 auto 1.5rem auto;
+  display: block;
   animation: glowPulse 3s ease-in-out infinite;
 }
 
 @keyframes glowPulse {
   0%, 100% {
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9), 0 0 20px #f37b70;
+    filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 16px rgba(243, 123, 112, 0.4));
   }
   50% {
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9), 0 0 40px #f37b70;
+    filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 32px rgba(243, 123, 112, 0.7));
   }
 }
 
@@ -168,17 +178,14 @@
 
 .cta-button {
   display: inline-block;
-  background: #f37b70;
-  color: #2a1143;
   font-family: 'Bebas Neue', 'Arial Black', Impact, sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 1rem 2.5rem;
   text-decoration: none;
-  border: 3px solid #f37b70;
+  border: 3px solid;
   border-radius: 4px;
   letter-spacing: 2px;
-  text-shadow: none;
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
 }
@@ -188,13 +195,33 @@
   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
-.cta-button.secondary {
+/* Coral — primary YouTube/listen button */
+.cta-button.cta-youtube {
+  background: #f37b70;
+  color: #2a1143;
+  border-color: #f37b70;
+}
+
+/* Peach/gold filled — shows button */
+.cta-button.cta-shows {
+  background: #fab383;
+  color: #2a1143;
+  border-color: #fab383;
+}
+
+.cta-button.cta-shows:hover {
+  background: #f9a06a;
+  border-color: #f9a06a;
+}
+
+/* Ghost/outline — contact button */
+.cta-button.cta-contact {
   background: transparent;
   color: #fab383;
   border-color: #fab383;
 }
 
-.cta-button.secondary:hover {
+.cta-button.cta-contact:hover {
   background: rgba(250, 179, 131, 0.1);
 }
 

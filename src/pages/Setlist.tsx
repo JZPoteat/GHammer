@@ -64,18 +64,10 @@ const Setlist = () => {
     <div className="setlist-page">
       <section className="setlist-hero">
         <h1 className="page-title">OUR SETLIST</h1>
-        <p className="page-subtitle">The songs that keep crowds rocking</p>
       </section>
 
       <section className="setlist-section">
         <div className="content-container">
-          <div className="setlist-intro">
-            <p>
-              From classic rock anthems to 90s grunge and modern hits, our repertoire spans 
-              decades of legendary music. Here's what we bring to the stage.
-            </p>
-          </div>
-
           <div className="controls">
             <input
               type="text"
@@ -125,11 +117,6 @@ const Setlist = () => {
               No songs found. Try a different search or filter.
             </div>
           )}
-
-          <div className="setlist-footer">
-            <h3>Looking for something specific?</h3>
-            <p>We're always expanding our repertoire. Contact us about special requests!</p>
-          </div>
         </div>
       </section>
     </div>

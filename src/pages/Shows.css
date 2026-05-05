@@ -46,94 +46,38 @@
   text-align: center;
 }
 
-.shows-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.facebook-cta {
+  text-align: center;
+  padding: 3rem 2rem;
   margin-bottom: 4rem;
 }
 
-.show-card {
-  background: rgba(152, 83, 161, 0.2);
-  border: 3px solid #9853a1;
-  border-radius: 8px;
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  transition: all 0.3s ease;
-  flex-wrap: wrap;
-}
-
-.show-card.upcoming:hover {
-  transform: translateX(8px);
-  border-color: #f37b70;
-  box-shadow: -8px 8px 0px rgba(243, 123, 112, 0.4);
-}
-
-.show-date {
-  display: flex;
-  flex-direction: column;
-  min-width: 150px;
-}
-
-.date-text {
-  font-family: 'Bebas Neue', 'Arial Black', Impact, sans-serif;
-  font-size: 1.3rem;
-  color: #f37b70;
-  letter-spacing: 1px;
-}
-
-.time-text {
-  font-family: 'Courier New', monospace;
-  font-size: 1rem;
-  color: #fab383;
-  margin-top: 0.5rem;
-}
-
-.show-details {
-  flex: 1;
-  min-width: 200px;
-}
-
-.venue-name {
-  font-family: 'Bebas Neue', 'Arial Black', Impact, sans-serif;
-  font-size: 1.8rem;
-  color: #fab383;
-  margin: 0 0 0.5rem 0;
-  letter-spacing: 2px;
-}
-
-.location {
+.facebook-cta-text {
   font-family: 'Courier New', monospace;
   color: #b3b3c6;
-  font-size: 1.1rem;
-  margin: 0;
+  font-size: 1.2rem;
+  margin: 0 0 2rem 0;
 }
 
-.show-action {
-  min-width: 120px;
-}
-
-.tickets-button {
+.facebook-button {
+  display: inline-block;
   background: #f37b70;
   color: #2a1143;
   font-family: 'Bebas Neue', 'Arial Black', Impact, sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  padding: 0.8rem 1.5rem;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
   border: 3px solid #f37b70;
   border-radius: 4px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
 }
 
-.tickets-button:hover {
+.facebook-button:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
 .booking-cta {
@@ -180,67 +124,13 @@
   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
 }
 
-.past-shows-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.show-card.past {
-  background: rgba(124, 129, 151, 0.2);
-  border: 2px solid #7c8197;
-  padding: 1.5rem;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.show-card.past:hover {
-  border-color: #9853a1;
-  transform: translateY(-4px);
-  box-shadow: 0 4px 8px rgba(152, 83, 161, 0.3);
-}
-
-.show-date-past {
-  font-family: 'Courier New', monospace;
-  color: #fab383;
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-.show-details-past h4 {
-  font-family: 'Bebas Neue', 'Arial Black', Impact, sans-serif;
-  color: #b3b3c6;
-  font-size: 1.2rem;
-  margin: 0 0 0.3rem 0;
-  letter-spacing: 1px;
-}
-
-.show-details-past p {
-  font-family: 'Courier New', monospace;
-  color: #7c8197;
-  font-size: 0.9rem;
-  margin: 0;
-}
-
 @media (max-width: 768px) {
   .page-title {
     font-size: 2.5rem;
   }
 
-  .show-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .show-action {
+  .facebook-button {
     width: 100%;
-  }
-
-  .tickets-button {
-    width: 100%;
-  }
-
-  .past-shows-list {
-    grid-template-columns: 1fr;
+    text-align: center;
   }
 }

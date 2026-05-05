@@ -5,7 +5,6 @@ const Contact = () => {
     <div className="contact-page">
       <section className="contact-hero">
         <h1 className="page-title">GET IN TOUCH</h1>
-        <p className="page-subtitle">Let's rock together</p>
       </section>
 
       <section className="contact-section">
@@ -71,10 +70,6 @@ const Contact = () => {
 
             <div className="contact-form-section">
               <h2 className="section-title">SEND US A MESSAGE</h2>
-              <p className="form-description">
-                Click the button below to send us an email. Tell us about your event, 
-                venue, or just say hello!
-              </p>
               <a 
                 href="mailto:grabtharshammernc@gmail.com?subject=Booking Inquiry&body=Hi Grabthar's Hammer,%0D%0A%0D%0AI'd like to inquire about booking you for:%0D%0A%0D%0AEvent Type:%0D%0ADate:%0D%0AVenue/Location:%0D%0AExpected Audience Size:%0D%0AAdditional Details:%0D%0A%0D%0AThanks!"
                 className="email-button"

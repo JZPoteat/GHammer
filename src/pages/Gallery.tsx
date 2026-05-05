@@ -17,7 +17,6 @@ const Gallery = () => {
     <div className="gallery-page">
       <section className="gallery-hero">
         <h1 className="page-title">MEDIA GALLERY</h1>
-        <p className="page-subtitle">Photos and videos from our performances</p>
       </section>
 
       <section className="gallery-section">
@@ -39,8 +38,6 @@ const Gallery = () => {
           </div>
 
           <div className="gallery-cta">
-            <h3>Want to see more?</h3>
-            <p>Follow us on social media for the latest photos and videos</p>
             <div className="social-buttons">
               <a 
                 href="https://www.facebook.com/profile.php?id=61572077633076" 

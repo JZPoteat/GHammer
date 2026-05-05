@@ -5,7 +5,6 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Shows from './pages/Shows';
 import Setlist from './pages/Setlist';
-import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import './App.css';
 
@@ -24,7 +23,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/shows" element={<Shows />} />
           <Route path="/setlist" element={<Setlist />} />
-          <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
