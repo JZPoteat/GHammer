@@ -49,15 +49,7 @@ const Contact = () => {
                     Facebook
                   </a>
                   <a 
-                    href="https://instagram.com/grabtharshammer" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="social-link-item"
-                  >
-                    Instagram
-                  </a>
-                  <a 
-                    href="https://youtube.com/@grabtharshammer" 
+                    href="https://www.youtube.com/@GrabtharsHammerBand" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="social-link-item"
